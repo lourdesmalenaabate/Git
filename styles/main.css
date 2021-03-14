@@ -1,2 +1,31 @@
 /*Hoja de Estilos Proyecto*/
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	margin: 0;
+}
+/*navegacion*/
+nav{
+	display:flex;
+	justify-content: space-between;
+        background-color: #eee;
+	align-items: center;
+}
+.menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.menu a{
+        display: block;
+	color:#333;
+text-decoration: none;
+}
+.menu a:hover{
+background-color:#3338;
+}
+
+/*pie de pagina*/
 /*Autor: Malena Abate*/
