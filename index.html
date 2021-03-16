@@ -12,17 +12,25 @@ maximum_scale=3">
 
 </head>
 <body> 
-nav>a.brand+button.button{&equiv;}+(ul>li*4>a{link $}[href="#"])+a.back
+<!--nav-->
 <nav>
 	<a class="brand" href="#"></a>
 	<button class="button">&equiv;</button>
-	<ul>
+	<ul class="menu">
 		<li><a href="inicio.html" title="inicio">INICIO</a></li>
 		<li><a href="about.html" title="acerca">ACERCA</a></li>
 		<li><a href="gallery.html" title="galeria">GALERIA</a></li>
 		<li><a href="#contact" title="contacto">CONTACTO</a></li>
 	</ul>
-	<a class="back" href=""></a>
+<form id="search" action="">
+<label for="searchIn"></label>
+<input id="searchIn" type="search" placeholder="INGRESE UN TEXTO">
+<button class="search">BUSCAR</button>
+</form>
+
+
+
+	<a class="back" href="">^</a>
 </nav>
 <!--header#header>h1{curso git}+p{desarrollo colaborativo}-->
 <header id="header">
@@ -106,7 +114,7 @@ nav>a.brand+button.button{&equiv;}+(ul>li*4>a{link $}[href="#"])+a.back
 		       maxlength="200"
 		       required/>
 	       </textarea>
-	       <button class="button"></button>
+	       <button class="button">ENVIAR</button>
 	</form>
 
 	<p>&copy; TODOS LOS DERECHOS RESERVADOS
