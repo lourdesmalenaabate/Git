@@ -27,7 +27,7 @@ padding: .5rem 1rem;
 border: 2px solid transparent;
 font-size:1rem;
 }
-
+/**/
 *{
 	box-sizing: border-box;
 	font-family: sans-serif;
@@ -38,12 +38,16 @@ body{
 /*navegacion*/
 nav{
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-around;
         background-color: #eee;
+        flex-wrap: no-wrap:
 	align-items: center;
 }
-.menu{
-	list-style:none;
+nav.menu{
+height:o;
+overflow:hidden;	
+width:100%;
+list-style:none;
 	margin:0;
 	padding:0;
 }
@@ -51,10 +55,48 @@ nav{
         display: block;
 	color:#333;
 text-decoration: none;
+padding: .5rem;
 }
 .menu a:hover{
 background-color:#3338;
 }
+.menu.active{
+height: auto;
 
+}
+#search{
+
+display:none;
+}
+/*medium devices*/
+@media screen and (min-width:768px){
+nav.button{
+display:none;
+}
+nav.menu{
+display:flex;
+width:auto;
+height:auto;
+}
+#search{
+display:block;
+}
+}
+nav .back{
+position: fixed;
+bottom : 1rem;
+right:1rem;
+opacity: .6;
+background-color:#333;
+border-radius: 50%;
+width: 2rem;
+line-heigth: 2rem;
+padding: 0;
+text-align: center;
+color: #eee;
+}
+nav .back:hover{
+opacity: .8;
+}
 /*pie de pagina*/
 /*Autor: Malena Abate*/
