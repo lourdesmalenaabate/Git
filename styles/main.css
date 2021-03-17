@@ -45,6 +45,11 @@ nav{
         flex-wrap: no-wrap:
 	align-items: center;
 }
+nav a, 
+nav form{
+padding: .5rem;
+
+}
 nav.menu{
 height:o;
 overflow:hidden;	
@@ -68,7 +73,7 @@ height: auto;
 }
 #search{
 
-<<<<<<< HEAD
+
 display:none;
 }
 /*medium devices*/
@@ -100,7 +105,7 @@ color: #eee;
 }
 nav .back:hover{
 opacity: .8;
-=======
+
 /*contactform*/
 #contact{
 max-width:540px;
@@ -113,9 +118,31 @@ padding: .5rem 1rem;
 border: 2px solid transparent;
 font-size:1rem;
 }
+/*medium devices*/
+@media screen and (min-width:768px){
+nav .button{
+display:none;
+}
+nav .menu{
+display:flex;
+width: auto;
+height: auto;
+}
+}
+
 /*large devices*/
 @media screen and (min-width:992px){
+
+#search{
+display:flex;
+
+}
+
+#searchIn{
+min-width:540px;
+}
 #contact{
+
 max-width:720px;
 }
 
