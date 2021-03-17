@@ -1,168 +1,213 @@
+/* Content First - Mobile First */
+	* {
+		box-sizing: border-box;
+		font-family: sans-serif
+	}
+	body{
+		margin: 0;
+	}	
+	.button{
+		margin: .5rem;
+		border-radius: .2rem;
+		border: 2px solid #333;
+		padding: .5rem;
+		color: #333;
+		background-color: transparent;
+	}
+	.button:hover{
+		color: #eee;
+		background-color: #333;
+	}
+	.button{
+		margin: .5rem;
+		border-radius: .2rem;
+		border: 2px solid #333;
+		padding: .5rem;
+		color: #333;
+		background-color: transparent;
+	}
+	.button:hover{
+		color: #eee;
+		background-color: #333;
+	}
+	/*navigationBar*/
+		nav{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: #eee;
+		}
+		nav a, 
+		nav form{
+			padding: .5rem;
+		}
+		nav .menu{
+			width:100%;
+			height:0;
+			overflow: hidden;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu a{
+			display: block;
+			padding: .5rem;
+			color:#333;
+			text-decoration: none;
+		}	
+		.menu a:hover{
+			background-color: #3338;
+		}
+		.menu.active{
+			height:auto;
+		}
+		label[for="searchIn"]{
+			display:none;
+		}
+		#search {
+			display:none;
+		}
+		#searchIn{
+			outline: none;
+			border: none;
+			border-bottom: .2rem solid #333;
+			background-color: transparent;
+		}
+		#searchIn:focus{
+			width: 20vw;
+		}
+		#search .button{
+			display: inline-block;
+			margin: 0;
+		}
+		nav .back{
+			position: fixed;
+			bottom: 1rem;
+			right: 1rem;
+			width: 2rem;
+			padding: 0;
+			line-height: 2rem;
+			text-align: center;
+			border-radius: 50%;
+			opacity: .6;
+			color: #eee;
+			background-color: #333;
+		}
+		nav .back:hover{
+			opacity: .8;
+		}
+	/*mainHeader*/
+		#header{
+			padding: 20% 1rem;
+			text-align:center;
+			color: #eee;
+			text-shadow: 0 0 .2rem #666;
+			backgroun-color: #333;
+		}
+		#header h1,
+		#header p{
+			margin: 0;
+			font-size: calc(2vw + .8rem);
+		}
+	/*section*/	
+	section{
+		background-color: #e1e1e1;
+		margin-bottom: 1rem;
+	}		
 
-/*Hoja de Estilos Proyecto*/
-.button{
-margin: .5rem;
-padding: .5rem;
-color: #333;
-background-color: transparent;
-border: 2px solid #333;
-border-radius: .2rem;
+	.gallery{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: .5rem;
+	}
+	.gallery img{
+		display:block;
+		width: 100%;
+		min-height: 200px;
+		border: .5rem solid #eee;
+		border-radius: .5rem;
+		background-color: #666;
+	}
+	/*mainFooter*/
+		#footer{
+			padding: 1rem;
+			background-color: #eee;
+		}
+	/*contactForm*/
+		#contact{
+			max-width: 540px;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+		}
+		#contact input,
+		#contact textarea{
+			border-radius: .2rem;
+			padding: .5rem 1rem;
+			outline: none;
+			border: 2px solid transparent;
+			font-size: 1rem;
+		}
+		#contact textarea{
+			min-height: 7rem;
+			resize: none;
+		}
+		#contact .button{
+			margin: .2rem 0;
+			font-size: 1rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		#contact .validate{
+			display: none;
+			padding: 1rem;
+			color: #eee;
+			text-shadow: 
+				0 0 .2rem #333, 
+				-2px 2px 2px #333;
+		}
+		/*validacion*/
+		#contact :focus{
+			box-shadow: 0 0 .5rem #333;
+		}
+		#contact :focus + .validate{
+			display: block;
+			border: 2px solid;
+			border-radius: 0 0 .2rem .2rem;
+		}
+		#contact :focus:invalid{
+			border-color: limegreen;
+		}
+		#contact :focus:invalid + .validate{
+			border-color: limegreen;
+			background-color: limegreen;
+		}
+		#contact :focus:valid{
+			border-color: tomato;
+		}
+		#contact :focus:valid + .validate{
+			border-color: tomato;
+			background-color: tomato;
+		}
 
-}
-.button:hover{
-color:#eee;
-background-color:#333
-}
-/*main header*/
-<<<<<<< HEAD
-
-
-/*contactform*/
-#contact{
-display: flex;
-flex-direction: column;
-}
-#contact input,
-#contact textarea{
-padding: .5rem 1rem;
-border: 2px solid transparent;
-font-size:1rem;
-}
-/**/
-
-*{
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
-body{
-	margin: 0;
-}
-/*navegacion*/
-nav{
-	display:flex;
-	justify-content: space-around;
-        background-color: #eee;
-        flex-wrap: no-wrap:
-	align-items: center;
-}
-<<<<<<< HEAD
-nav a, 
-nav form{
-padding: .5rem;
-
-}
-=======
->>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
-nav.menu{
-height:o;
-overflow:hidden;	
-width:100%;
-list-style:none;
-	margin:0;
-	padding:0;
-}
-.menu a{
-        display: block;
-	color:#333;
-text-decoration: none;
-padding: .5rem;
-}
-.menu a:hover{
-background-color:#3338;
-}
-.menu.active{
-height: auto;
-
-}
-#search{
-
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
-display:none;
-}
 /*medium devices*/
-@media screen and (min-width:768px){
-nav.button{
-display:none;
-}
-nav.menu{
-display:flex;
-width:auto;
-height:auto;
-}
-#search{
-display:block;
-}
-}
-nav .back{
-position: fixed;
-bottom : 1rem;
-right:1rem;
-opacity: .6;
-background-color:#333;
-border-radius: 50%;
-width: 2rem;
-line-heigth: 2rem;
-padding: 0;
-text-align: center;
-color: #eee;
-}
-nav .back:hover{
-opacity: .8;
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
-/*contactform*/
-#contact{
-max-width:540px;
-display: flex;
-flex-direction: column;
-}
-#contact input,
-#contact textarea{
-padding: .5rem 1rem;
-border: 2px solid transparent;
-font-size:1rem;
-}
-<<<<<<< HEAD
-/*medium devices*/
-@media screen and (min-width:768px){
-nav .button{
-display:none;
-}
-nav .menu{
-display:flex;
-width: auto;
-height: auto;
-}
-}
-
-/*large devices*/
-@media screen and (min-width:992px){
-
-#search{
-display:flex;
-
-}
-
-#searchIn{
-min-width:540px;
-}
-#contact{
-
-=======
-/*large devices*/
-@media screen and (min-width:992px){
-#contact{
->>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
-max-width:720px;
-}
-
-}
-/*pie de pagina*/
-/*Autor: Malena Abate*/
+	@media screen and (min-width:768px){
+		nav .button{
+			display:none;
+		}
+		nav .menu{
+			display: flex;
+			width: auto;
+			height: auto;
+		}
+	}
+/*Large Devices*/	
+	@media screen and (min-width:992px){
+		#search{
+			display: flex;
+		}		
+		#searchIn{
+			min-width:540px;
+		}
+/*Autor: Cristian Racedo*/

@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,17 +16,17 @@
 	<nav>
 		<a class="brand" href="#">Git</a>
 		<button class="button">&equiv;</button>
+		<form id="search" action="">
+			<label for="searchIn">Buscar</label>
+			<input id="searchIn" type="search" placeholder="Ingrese un Texto">
+			<button class="search button">Buscar</button>
+		</form>
 		<ul class="menu">
 			<li><a class="icon-home" href="#" title="inicio"><span>Inicio</span></a></li>
 			<li><a class="icon-about" href="about.html" title="acerca"><span>Acerca</span></a></li>
 			<li><a class="icon-gallery" href="gallery.html" title="galeria"><span>Galeria</span></a></li>
 			<li><a class="icon-contact" href="#contact" title="contacto"><span>Contacto</span></a></li>
 		</ul>
-		<form id="search" action="">
-			<label for="searchIn"></label>
-			<input id="searchIn" type="search" placeholder="Ingrese un Texto">
-			<button class="search">Buscar</button>
-		</form>
 		<a class="back" href=""> ^ </a>
 	</nav>
 	<!-- header -->
@@ -59,6 +58,29 @@
 		<p>
 				Elit nulla iure pariatur perferendis atque Recusandae itaque debitis placeat tenetur ea dignissimos Recusandae quod earum hic dolore blanditiis eius voluptatem Itaque sit ea doloremque repellendus similique itaque Ullam incidunt eius velit sunt saepe expedita cupiditate itaque? Ut similique blanditiis obcaecati odio corporis? Ab ut dignissimos nemo doloremque mollitia Nobis culpa aperiam quaerat voluptatem vel unde voluptatum Autem voluptatem non molestiae eligendi nam. Impedit fugiat aliquam fuga deleniti dolor vel! Labore voluptates quas nulla repellendus eius Maiores laudantium ullam libero laborum debitis veritatis Quaerat odit at quos voluptatem ipsam? Quasi eos esse nostrum odio aspernatur Sunt doloremque corporis minus non.
 		</p>
+		<section>
+			<h3>Otras Caracteristicas</h3>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eos sunt expedita quasi ab perferendis ex voluptatum, cumque eius laborum illum ducimus vel fugiat architecto rerum? Illo nesciunt doloribus labore!
+		</section>
+		<section>
+			<h3>imagenes</h3>
+			<div class="gallery">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<div>error:</div>
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="../assets/img/.jpg" alt="foto galeria">
+			</div>
+		</section>
 	</main>
 	<!-- footer -->
 	<footer id="footer">
@@ -71,35 +93,51 @@
 		<form id="contact" action="">
 			<h2>Contactanos</h2>
 			<!-- (label+input+.validate)*3+label+textarea+button -->
-			<label for="">Nombre</label>
+			<label for="contactName">Nombre (*)</label>
 			<input 
-				id=""
-				name=""
-				type=""
+				id="contactName"
+				name="contactName"
+				type="text"
+				maxlength="50"
+				pattern="[A-Z a-z]{2,50}"
+				placeholder="Ingrese su Nombre"
 				required />
-			<span class="validate"></span>
-			<label for="">Correo</label>
+			<span class="validate">
+				Ingrese un nombre valido, el mismo debe poseer entre 2 y 50 caracteres
+			</span>
+			<label for="contactEmail">Correo (*)</label>
 			<input 
-				id=""
-				name=""
-				type=""
+				id="contactEmail"
+				name="contactoEmail"
+				type="email"
+				placeholder="Ingrese su Correo"
 				required />
-			<span class="validate"></span>
-			<label for="">Telefono</label>
+			<span class="validate">
+				Ingrese un correo valido respetando la estructura "usuario@servidor"
+			</span>
+			<label for="contactPhone">Telefono (*)</label>
 			<input 
-				id=""
-				name=""
-				type=""
+				id="contactPhone"
+				name="contactPhone"
+				type="tel"
+				pattern="[\(]\d{2,5}[\)]\d{3,6}[\-]\d{3,6}"
+				placeholder="Ingrese su Telefono"
 				required />
-			<span class="validate"></span>
-			<label for="">Consulta</label>
+			<span class="validate">
+				Ingrese su numero con la caracteristica entre parentesis y guiones cada 3 o 6 digitos
+			</span>
+			<label for="contactConsult">Consulta (*)</label>
 			<textarea 
-				id="" 
-				name=""
+				id="contactConsult" 
+				name="contactConsult"
 				minlength="10"
 				maxlength="200"
+				placeholder="Ingrese su consulta"
 				required></textarea>
 			<button class="button"> enviar </button>
+			<div>
+				Todos los campos con asterisco (*) son obligatorios
+			</div>
 		</form>
 		<p>&copy; Todos los derechos reservados 
 			<a href="#">Cristian Racedo</a>
