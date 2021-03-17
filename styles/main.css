@@ -45,11 +45,14 @@ nav{
         flex-wrap: no-wrap:
 	align-items: center;
 }
+<<<<<<< HEAD
 nav a, 
 nav form{
 padding: .5rem;
 
 }
+=======
+>>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
 nav.menu{
 height:o;
 overflow:hidden;	
@@ -73,7 +76,11 @@ height: auto;
 }
 #search{
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
 display:none;
 }
 /*medium devices*/
@@ -105,7 +112,11 @@ color: #eee;
 }
 nav .back:hover{
 opacity: .8;
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
 /*contactform*/
 #contact{
 max-width:540px;
@@ -118,6 +129,7 @@ padding: .5rem 1rem;
 border: 2px solid transparent;
 font-size:1rem;
 }
+<<<<<<< HEAD
 /*medium devices*/
 @media screen and (min-width:768px){
 nav .button{
@@ -143,6 +155,11 @@ min-width:540px;
 }
 #contact{
 
+=======
+/*large devices*/
+@media screen and (min-width:992px){
+#contact{
+>>>>>>> 82266f65892db0fccf4531d15b0e5e9e0c6b31af
 max-width:720px;
 }
 
